@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+} 
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#fffdf1, #fff);
+}
+
+header{ 
+    width: 80%;
+     border: 1 px solid #000; 
+    margin: auto;
+} 
+header nav{
+    width: 95%;
+    height: 8%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+header nav ul li{
+  padding: 3px 15px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: #121213;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+header nav ul a:hover{
+    color: red;
+}
+header nav h2 a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+header nav h2 a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.7s;
+}
+header nav h2 a:hover::after{
+    width: 100%;
+}
+header nav ul li:nth-last-child(1){
+background-color: #000;
+border-radius: 20px;
+padding: 5px 20px;
+}
+header nav ul li:nth-last-child(1) a{
+color: aliceblue;
+}
+header nav ul li:nth-last-child(1):hover{
+    background-color: grey;
+    transition: 0.3s;
+}
+
+.travel nav .bi-three-dots{
+display: none;
+}
+
+.travel .content{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+     border: 1 px solid #000; 
+    margin: auto;
+    
+}
+.travel .content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background: url('images/travel.jpeg')no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+    
+}
+.travel .content .cont_bx{
+    width: 500px;
+    height: auto;
+    color: #fff;
+    padding: 30px;
+}
+.travel .content .cont_bx h1{
+    line-height: 40px;
+    font-weight: 800;
+}
+.travel .content .cont_bx p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(241, 241, 241);
+}
+.travel .content .cont_bx button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.travel .content .cont_bx button:hover{
+    background: rgb(113, 113, 113);
+    border: 2px solid rgb(113, 113, 113);
+}
+.travel .trip_bx{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    
+}
+.travel .trip_bx .search_bx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgb(114, 114, 114);
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+.travel .trip_bx .search_bx .cardi{
+    width: 200px;
+    height: 100%;
+    
+}
+.travel .trip_bx .search_bx .cardi h4{
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+}
+.travel .trip_bx .search_bx .cardi h4 .bi{
+   position: absolute;
+   font-size: 13px;
+   margin: 2px 0px 0px 5px;
+   transition: .3s linear;
+}
+.travel .trip_bx .search_bx .cardi input{
+    margin-top: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+.travel .trip_bx .search_bx input[type="button"]{
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.travel .trip_bx .search_bx input[type="button"]:hover{
+    background: grey;
+}
+
+.travel .trip_bx .travel_bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 30px;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    padding-bottom:20px ;
+    box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
+}
+.travel .trip_bx .travel_bx::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(241, 241, 241, .7);
+    backdrop-filter: blur(5px);    
+    z-index: -1;
+}
+.travel .trip_bx .travel_bx h4{
+    margin: 0;
+    padding: 60px 0px 15px 1.7%;
+}
+.travel .trip_bx .travel_bx .cardis{
+    width: 96%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 20px;
+}
+.travel .trip_bx .travel_bx .cardis .cardi{
+    width: 280px;
+    height: 240px;
+    /* border: 1px solid #000; */
+}
+.travel .trip_bx .travel_bx .cardis .cardi h3{
+    margin: 0px 0px 10px 0px ;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.travel .trip_bx .travel_bx .cardis .cardi h3 img{
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+.travel .trip_bx .travel_bx .cardis .cardi img{
+    width: 100%;
+    height: 60%;
+    
+}
+.travel .trip_bx .travel_bx .cardis .cardi .btn_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+.travel .trip_bx .travel_bx .cardis .cardi .btn_city a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    border-radius: 28px;
+    padding: 6px 20px;
+    font-size: 11px;
+    transition: .3s linear;
+}
+.travel .trip_bx .travel_bx .cardis .cardi .btn_city a:hover{
+    background: gray;
+}
+.travel .trip_bx .travel_bx .cardis .cardi .btn_city h5{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.travel .trip_bx .travel_bx .cardis .cardi .btn_city h5 span{
+    font-size: 13px;
+    font-weight: 700;
+}
+.offers{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 125px;
+    padding-top:115px;
+    transition:  0.5s linear;
+}
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+.offers p{
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+.offers .cardis{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+.offers .cardis .cardi{
+    position: relative;
+    width: 240px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    margin: 0px;
+}
+.offers .cardis .cardi h3{
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165) ;
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.offers .cardis .cardi .img_text{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+}
+.offers .cardis .cardi .img_text img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 5px;
+}
+.offers .cardis .cardi .img_text h4{
+    position: absolute;
+    font-size: 10px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin-bottom: -5px;
+    color: #fff;
+    z-index: 2;
+}
+.offers .cardis .cardi .img_text h4::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgb(255, 255, 255,.1);
+   backdrop-filter: blur(5px);
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+}
+.offers .cardis .cardi .cont_bx{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px solid rgb(231, 231, 231);
+   padding: 5px 0px;
+   border-radius: 0px 0px 10px 10px;
+}
+.offers .cardis .cardi .cont_bx .price, .days{
+    margin: 0px 8px;
+}
+.offers .cardis .cardi .cont_bx .price .heart_chat{
+    display: flex;
+    align-items: center;
+}
+.offers .cardis .cardi .cont_bx .heart_chat i:nth-child(1){
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offers .cardis .cardi .cont_bx .heart_chat i span{
+    color: #000;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+.offers .cardis .cardi .cont_bx .heart_chat i:nth-child(2) {
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offers .cardis .cardi .cont_bx .price .info_price{
+   display: flex;
+   align-items: center;
+   margin-top: 3px;
+}
+.offers .cardis .cardi .cont_bx .price .info_price a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    transition: .3s linear;
+    margin-right: 3px;
+ }
+.offers .cardis .cardi .cont_bx .price .info_price a:hover{
+    color: rgb(238, 124, 124);
+ }
+ .offers .cardis .cardi .cont_bx .price .info_price h4{
+    margin-left: 20px;
+    font-size: 13px;
+    color: rgb(65, 109, 0);
+ }
+.offers .cardis .cardi .cont_bx .days{
+   color: #fff;
+   background: #000;
+   font-size: 10px;
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   transition: .3s linear;
+   margin: 3px;
+}
+.offers .cardis .cardi .cont_bx .days:hover{
+    transform: rotate(360deg);
+ }
+ 
+ 
+ .destination{
+    width:45%;
+    height: auto;
+    /* border:1px solid #000; */
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .destination .des-bx, .img-bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+    /* border: 1px solid #000; */
+ }
+.destination .des-bx h2{
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.destination .des-bx p{
+    font-size: 14px;
+}
+.destination .des-bx li{
+    list-style-type: none;
+    padding: 0px 0px 8px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.destination .des-bx li:hover{
+    color: grey;
+    transition: 0.3s ;
+}
+.destination .des-bx h5{
+    width: 250px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 25px 0px;
+}
+
+.destination .des-bx button{
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    border: 2px solid #000;
+    transition: 0.3s linear;
+}
+.destination .des-bx button:hover{
+    background-color: grey;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+.destination .img-bx img{
+    width: 100%;
+    height: 420px;
+    border-radius: 5px;
+}
+.destination .img-bx .msg{
+    position: absolute;
+    top: 60%;
+    left: -10%;
+    width: 182px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 20px grey;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.destination .img-bx .msg:nth-child(2){
+    top: 10%;
+    left: 55%;
+}
+.destination .img-bx .msg img{
+    width: 30px;
+    height: 55%;
+}
+.destination .img-bx .msg .cont{
+    margin-left: 15px;
+}
+.destination .img-bx .msg .cont h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.destination .img-bx .msg .cont .bi:nth-child(1){
+    color: red;
+    margin-right: 5px;
+    font-size: 13px;
+}
+.destination .img-bx .msg .cont .bi:nth-child(1) span{
+     font-style: normal;
+     margin-left: 3px;
+     font-size: 12px;
+     color: grey;
+}
+.destination .img-bx .msg .cont .bi:nth-child(2){
+    color: rgb(112, 196, 229);
+    margin-right: 5px;
+    font-size: 13px;
+}
+footer{
+    width:100%;
+    height: auto;
+    background-color: rgb(199, 199, 199);
+    margin-top: 50px;
+    padding: 35px;
+ }
+ footer .row .col-md-6 p{
+    margin-bottom: 10px;
+ }
+footer li{
+    margin:10px;
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+footer li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.7s;
+}
+footer li a:hover::after{
+    width: 100%;
+}
+footer li a:hover{
+    color: purple;
+}
+footer .row .col-md-2{
+    text-align: center;
+    border-right: 1px solid #000 ;
+}
+footer .row .col-md-2:nth-child(4){
+ border: none;
+}
+
+ 
+ .copyright{
+    background-color: black;
+ }
+ .copyright p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+ }
+ .offer .cardas{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+.offer .cardas .carda{
+    position: relative;
+    width: 240px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    margin: 0px;
+}
+.offer .cardas .carda h3{
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165) ;
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.offer .cardas .carda .img_text{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+}
+.offer .cardas .carda .img_text img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 5px;
+}
+.offer .cardas .carda .img_text h4{
+    position: absolute;
+    font-size: 10px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin-bottom: -5px;
+    color: #fff;
+    z-index: 2;
+}
+.offer .cardas .carda .img_text h4::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgb(255, 255, 255,.1);
+   backdrop-filter: blur(5px);
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+}
+.offer .cardas .carda .cont_bx{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px solid rgb(231, 231, 231);
+   padding: 5px 0px;
+   border-radius: 0px 0px 10px 10px;
+}
+.offer .cardas .carda .cont_bx .price, .days{
+    margin: 0px 8px;
+}
+.offer .cardas .carda .cont_bx .price .heart_chat{
+    display: flex;
+    align-items: center;
+}
+.offer .cardas .carda .cont_bx .heart_chat i:nth-child(1){
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offer .cardas .carda .cont_bx .heart_chat i span{
+    color: #000;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+.offer .cardas .carda .cont_bx .heart_chat i:nth-child(2) {
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offer .cardas .carda .cont_bx .price .info_price{
+   display: flex;
+   align-items: center;
+   margin-top: 3px;
+}
+.offer .cardas .carda .cont_bx .price .info_price a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    transition: .3s linear;
+    margin-right: 3px;
+ }
+.offer .cardas .carda .cont_bx .price .info_price a:hover{
+    color: rgb(238, 124, 124);
+ }
+ .offer .cardas .carda .cont_bx .price .info_price h4{
+    margin-left: 20px;
+    font-size: 13px;
+    color: rgb(65, 109, 0);
+ }
+.offer .cardas .carda .cont_bx .days{
+   color: #fff;
+   background: #000;
+   font-size: 10px;
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+   transition: .3s linear;
+   margin: 3px;
+}
+.offer .cardas .carda .cont_bx .days:hover{
+    transform: rotate(360deg);
+ }
+ .offer{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 60px;
+    transition:  0.5s linear;
+}
+.offer h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+.offer p{
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight:600;
+     color: grey;
+      font-size:40px;
+      margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border:none;
+    width:120px;
+    height:5px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width:400px;
+    height: 50px;
+    border: 1px solid grey;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: grey;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height:140px;
+    padding-top:15px;
+    border-radius:20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #2fd440;
+}
+.contact-inputs::placeholder{
+    color: grey;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgb(185, 38, 238), rgb(241, 45, 163));
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 80vh;
+    overflow: hidden;
+}
+.thisrow{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 30%;
+    float: left;
+}
+.image-section img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.contenta{
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+
+.contenta h1{
+    font-size: 90px;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    color: #222;
+    font-family: 'Lobster', cursive;
+}
+
+.contenta p{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:786px){
+    .image-section{
+        width: 100%;
+        float: none;
+    }
+    .contenta{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+    .contenta h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+        font-family: 'Lobster', cursive;
+    }
+    .contenta p{
+        font-size: 18px;
+    }
+    .teams{
+        max-width: 100%;
+    }
+}
+
+.cont{
+    text-align: center;
+}
+.team{
+    padding-top: 60px;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+    font-family: 'Lobster', cursive;
+}
+.sub-cont{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+}
+.teams{
+    margin: 10px;
+    padding: 22px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.teams:hover{
+    background-color: rgb(215, 215, 190);
+    border-radius: 12px;
+}
+
+.teams img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+.namae{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.desig{
+    font-style: italic;
+    color: grey;
+    font-weight: 400;
+}
+.aboutme{
+    margin:20px 0;
+    font-weight: 300;
+    color: grey;
+}
+.social-links{
+     margin: 14px;
+}
+.social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    transition: .4s;
+}
+.social-links a:hover{
+    transform: scale(1.5);
+}
+.social-links a i{
+    color: grey;
+}
+.social-links a i:hover{
+    color: rgb(103, 41, 41);
+}
+.service-heading h1{
+    text-align: center;
+    margin: 50px 0;
+    color: #000;
+    font-size: 55px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service{
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2f1f1;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.service:hover{
+    transform: translateY(-5px);
+}
+.service i{
+    font-size: 36px;
+    color: green;
+    margin-bottom: 18px;
+}
+.service h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: 17px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 10px;
+}
+.service a{
+    text-decoration: none;
+    font-size: 17px;
+    color: green;
+}
