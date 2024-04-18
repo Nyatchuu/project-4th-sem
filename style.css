@@ -1090,3 +1090,24 @@ footer .row .col-md-2:nth-child(4){
 .book-form button:hover{
     background-color: #45a049;
 }
+@media screen and (max-width:786px){
+    .dest-bot{
+        display: block;
+    }
+    .pack-inc{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .dest-bot .pack-inc ul{
+        list-style-type: none;
+    }
+    .gallery div img{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    .gallery{
+        width: 900px;
+    }
+}
