@@ -31,8 +31,8 @@
                             <i class="bi bi-chat-fill"><span>17813</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$299</h4>
+                            <a href="../package-pages/pokhara.php">Book Now</a>
+                            <h4>Rs. 5000</h4>
                         </div>
                     </div>
                     <div class="days">5 Days <br>Nepal</div>
@@ -51,8 +51,8 @@
                             <i class="bi bi-chat-fill"><span>39853</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$499</h4>
+                            <a href="../package-pages/lumbini.php">Book Now</a>
+                            <h4>Rs.4000</h4>
                         </div>
                     </div>
                     <div class="days">7 Days <br>Nepal</div>
@@ -71,8 +71,8 @@
                             <i class="bi bi-chat-fill"><span>24567</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$399</h4>
+                            <a href="../package-pages/ghandruk.php">Book Now</a>
+                            <h4>Rs. 6999</h4>
                         </div>
                     </div>
                     <div class="days">7 Days <br>Nepal</div>
@@ -91,8 +91,8 @@
                             <i class="bi bi-chat-fill"><span>48972</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$599</h4>
+                            <a href="../package-pages/mustang.php">Book Now</a>
+                            <h4>Rs. 8000</h4>
                         </div>
                     </div>
                     <div class="days">10 Days <br>Nepal</div>

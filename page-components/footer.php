@@ -12,21 +12,21 @@
             <h3>Services</h3>
                     <li><a href="">Travel Guide</a></li>
                     <li><a href="">Accomodation</a></li>
-                    <li><a href="">Packages</a></li>
+                    <li><a href="../pages/packages.php">Packages</a></li>
                     <li><a href="">Travel Product</a></li>
             </div>
             <div class="col-md-2">
             <h3>About Us</h3>  
                     <li><a href="">Gallery</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Destinations</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="../pages/about-us.php">About Us</a></li>
+                    <li><a href="../pages/services.php">Our Destinations</a></li>
+                    <li><a href="../pages/contact.php">Contact Us</a></li>
             </div>
             <div class="col-md-2">
             <h3>Useful Links</h3>               
                     <li><a href="">FAQ</a></li>
                     <li><a href="">Career</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="../pages/services.php">Services</a></li>
                     <li><a href="">Testimonial</a></li>       
             </div>
         </div>
