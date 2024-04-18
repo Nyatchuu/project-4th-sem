@@ -98,7 +98,7 @@
                             <i class="bi bi-chat-fill"><span>17813</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
+                            <a href="../package-pages/pokhara.php">Book Now</a>
                             <h4>$299</h4>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             <i class="bi bi-chat-fill"><span>39853</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
+                            <a href="">Book Now</a>
                             <h4>$499</h4>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                             <i class="bi bi-chat-fill"><span>24567</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
+                            <a href="">Book Now</a>
                             <h4>$399</h4>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                             <i class="bi bi-chat-fill"><span>48972</span></i>
                         </div>
                         <div class="info_price">
-                            <a href="">More Info</a>
+                            <a href="">Book Now</a>
                             <h4>$599</h4>
                         </div>
                     </div>
