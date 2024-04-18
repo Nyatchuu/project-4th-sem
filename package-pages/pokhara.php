@@ -20,15 +20,89 @@
         <p class="img-text">Pokhara</p>
     </div>
 </div>
+<div class="container">
+<div class="dest-body">
+    <div class="dest-info">
+        <p>Pokhara is the second most visited city in Nepal, as well as one of the most popular tourist destinations. It is famous for its tranquil atmosphere and the beautiful surrounding countryside. Pokhara lies on the shores of Phewa Lake. From Pokhara, you can see three out of the ten highest mountains in the world (Dhaulagiri, Annapurna, Manasalu).</p>
+        <div class="gallery-wrap">
+            <img src="../images/back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span><img src="../images/pk1.jpg" alt=""></span>
+                    <span><img src="../images/pk2.jpg" alt=""></span>
+                    <span><img src="../images/pk3.jpg" alt=""></span>
+                </div>
+                <div>
+                    <span><img src="../images/pk4.jpg" alt=""></span>
+                    <span><img src="../images/pk4.jpg" alt=""></span>
+                    <span><img src="../images/pk4.jpg" alt=""></span>
+                </div>
+            </div>
+            <img src="../images/next.png" id="nextBtn">
+        </div>  
+    </div>   
+</div>
+<div class="dest-bot">
+    <div class="pack-inc">
+        <h2>Details:</h2>
+        <p>3 days and 2 nights</p>
+        <p>Package Includes : </p>
+        <ul>
+            <li>Breakfast and Dinner</li>
+            <li>Accomodation</li>
+            <li>Travel guide</li>
+            <li>All transportation in destination location</li>
+        </ul>
+        <p>Price: Rs.5000 per person(All tax included)</p>
+    </div>
+    <div class="book-form">
+    <h2>Travel Booking Form</h2>
+            <form action="book.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+ 
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+           
+                <label for="destination">Destination:</label>
+                <input type="text" name="destination" id="destination" required>
+           
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" name="departure-date" id="departure-date" required>
+               
+                <label for="return-date">Return Date:</label>
+                <input type="date" name="return-date" id="return-date" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+    </div>
+</div>
+</div>
 
 
-
-
-
-<?php
+        <?php
             include('../page-components/footer.php');
         ?>
-        <script src="app.js"></script>
+<script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+        backBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        })
+</script>
 
     
 </body>

@@ -1001,3 +1001,92 @@ footer .row .col-md-2:nth-child(4){
     font-family: 'Lobster', cursive;
     margin: 0 auto;
 }
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll ;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: transform 0.5s;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.dest-body .dest-info p{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.pack-inc{  
+    width: 50%;
+    align-items: center;
+}
+.pack-inc p{
+    font-size: 20px;
+}
+.dest-bot{
+    display: flex;
+    margin-top: 80px;
+}
+.book-form{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+.book-form h2{
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+}
+.book-form form{
+    display: flex;
+    flex-direction: column;
+}
+.book-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'poppins',sans-serif;
+}
+.book-form button{
+    margin-top:10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.book-form button:hover{
+    background-color: #45a049;
+}
