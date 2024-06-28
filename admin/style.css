@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: rgb(228, 228, 228);
+}
+.admin-login-form{
+    width: 450px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+.admin-login-form h2{
+    text-align: center;
+    background-color:  rgb(90, 188, 245);
+    padding: 12px 0px;
+    color: white;
+}
+.admin-login-form form{
+    padding: 30px 60px;
+}
+.admin-login-form form .input-field{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+.admin-login-form form .input-field i{
+    padding: 10px 14px;
+    background-color: rgb(228, 228, 228);
+    margin-right: 4px;
+}
+.admin-login-form form .input-field input{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    padding-left: 15px;
+}
+.admin-login-form button{
+    width: 100%;
+    background-color: rgb(90, 188, 245);
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 15px 0;
+    transition: background-color 0.4s;
+}
+.admin-login-form button:hover{
+    background-color: rgb(78, 161, 209);
+}
+.admin-login-form form .extra{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.admin-login-form form .extra a:first-child{
+    color: rgb(57, 114, 146);
+}
+.admin-login-form form .extra a:last-child{
+    color: rgb(57, 114, 146);
+}
+

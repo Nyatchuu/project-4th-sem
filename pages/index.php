@@ -48,7 +48,7 @@
                             <img src="./../images/nepal.jpg" alt="">
                             <div class="btn_city">
                                 <a href="">Read More</a>
-                                <h5>Himalayas <br><span>$799</span></h5>
+                                <h5>Himalayas <br><span>Rs.40000</span></h5>
                             </div>
                         </div>
                         <div class="cardi">
@@ -56,7 +56,7 @@
                             <img src="./../images/japan.jpg" alt="">
                             <div class="btn_city">
                                 <a href="">Read More</a>
-                                <h5>Mt.Fuji <br><span>$899</span></h5>
+                                <h5>Mt.Fuji <br><span>Rs. 80000</span></h5>
                             </div>
                         </div>
                         <div class="cardi">
@@ -64,7 +64,7 @@
                             <img src="./../images/canada.jpg" alt="">
                             <div class="btn_city">
                                 <a href="">Read More</a>
-                                <h5>Niagara Falls <br><span>$999</span></h5>
+                                <h5>Niagara Falls <br><span>Rs. 90000</span></h5>
                             </div>
                         </div>
                         <div class="cardi">
@@ -72,7 +72,7 @@
                             <img src="./../images/italy-ezgif.com-webp-to-jpg-converter.jpg" alt="">
                             <div class="btn_city">
                                 <a href="">Read More</a>
-                                <h5>Tower of Pisa <br><span>$999</span></h5>
+                                <h5>Tower of Pisa <br><span>Rs. 90000</span></h5>
                             </div>
                         </div>
                     </div>
