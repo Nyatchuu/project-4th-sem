@@ -25,21 +25,6 @@
                 <button>Start browsing</button>
             </div>
             <div class="trip_bx">
-                <div class="search_bx">
-                    <div class="cardi">
-                        <h4>Location <i class="bi bi-caret-down-fill"></i></h4>
-                        <input type="text" placeholder="Enter your destination">
-                    </div>
-                    <div class="cardi">
-                        <h4>Date <i class="bi bi-caret-down-fill"></i></h4>
-                        <input type="date">
-                    </div>
-                    <div class="cardi">
-                        <h4>People <i class="bi bi-caret-down-fill"></i></h4>
-                        <input type="number" placeholder="How many people?">
-                    </div>
-                    <input type="button" value="Explore Now">
-                </div>
                 <div class="travel_bx">
                     <h4>Countries to travel</h4>
                     <div class="cardis">
