@@ -19,22 +19,44 @@
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Email</th>
                             <th>Phone no.</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Is Ban</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>name</td>
-                            <td>email</td>
-                            <td>phone</td>
-                            <td>
-                                <a href="users-edit.php" class="btn btn-success bth-sm">Edit</a>
-                                <a href="users-delete.php" class="btn btn-danger bth-sm mx-2">Delete</a>
-                            </td>
-                        </tr>
+                        <?php
+                            $users = getAll('users');
+                            if (mysqli_num_rows($users) > 0) {
+                                foreach ($users as $userItem) {
+                                    ?>
+                                    <tr>
+                                        <td><?= $userItem['id']; ?></td>
+                                        <td><?= $userItem['name']; ?></td>
+                                        <td><?= $userItem['phone']; ?></td>
+                                        <td><?= $userItem['email']; ?></td>
+                                        <td><?= $userItem['role']; ?></td>
+                                        <td><?= $userItem['is_ban'] == 1 ?'Banned':'Active'; ?></td>
+                                        <td>
+                                            <a href="users-edit.php?id=<?= $userItem['id']; ?>" class="btn btn-success btn-sm">Edit</a>
+                                            <a href="users-delete.php?id=<?= $userItem['id']; ?>" class="btn btn-danger btn-sm mx-2" 
+                                            onclick="return confirm('Are you sure you want to delete this data?')">
+                                                Delete</a>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                            } else {
+                                ?>
+                                <tr>
+                                    <td colspan="7">No Record Found</td>
+                                </tr>
+                                <?php
+                            }
+                        ?>
+                        
                     </tbody>
                 </table>
 

@@ -23,14 +23,14 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="">Email</label>
-                                <input type="email" name="email" class="form-control">
+                                <label for="">Phone no.</label>
+                                <input type="text" name="phone" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="">Phone no.</label>
-                                <input type="text" name="phone" class="form-control">
+                                <label for="">Email</label>
+                                <input type="email" name="email" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
