@@ -7,7 +7,8 @@
             <li><a href="/project-4th/pages/about-us.php">About Us</a></li>
             <li><a href="/project-4th/pages/packages.php">Packages</a></li>
             <li><a href="/project-4th/pages/contact.php">Contact Us</a></li>
-            <li><a href="/project-4th/login_system/logout.php">logout</a></li>
+            <li><a href="/project-4th/user/user-bookings.php">My Bookings</a></li>
+            <li><a href="/project-4th/login_system/logout.php">Login</a></li>
         
         </ul> 
         <ul>
@@ -15,7 +16,9 @@
             <li class="hideOnMobile"><a href="/project-4th/pages/about-us.php">About Us</a></li>
             <li class="hideOnMobile"><a href="/project-4th/pages/packages.php">Packages</a></li>
             <li class="hideOnMobile"><a href="/project-4th/pages/contact.php">Contact Us</a></li>
-            <li class="hideOnMobile"><a href="/project-4th/login_system/logout.php">logout</a></li>
+            <li class="hideOnMobile"><a href="/project-4th/user/user-bookings.php">My Bookings</a></li>
+            <li class="hideOnMobile"><a href="/project-4th/login_system/logout.php">Login</a></li>
+            
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>       
     </nav>

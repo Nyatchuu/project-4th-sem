@@ -31,6 +31,7 @@
             </div>
         </div>
         </div> 
+        
     </footer>
     <div class="copyright">
         <p>All rights reserved &copy traveller</p>

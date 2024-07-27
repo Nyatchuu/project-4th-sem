@@ -1133,6 +1133,19 @@ footer .row .col-md-2:nth-child(4){
 .book-form button:hover{
     background-color: #45a049;
 }
+
+.pay img{
+    height: 100px;
+    width: 199px;
+}
+.pay {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pay h1 {
+    margin-left: 18px;
+}
 @media screen and (max-width:786px){
     .dest-bot{
         display: block;
